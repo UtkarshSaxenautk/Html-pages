@@ -1,0 +1,49 @@
+<Doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Html5">
+<meta name="keywords" content="Html5">
+<meta name="author" content="Utkarsh">
+<meta name="viewport" content="width = device-width , initial-scale = 1.0">
+</head>
+<canvas id = "can" width="600" height="600"></canvas>
+<script>
+    var canvas;
+    var canvasContext;
+
+    window.onload = function() {
+        canvas = document.getElementById('can');
+        canvasContext = canvas.getContext('2d');
+        canvas1 = document.getElementById('can1');
+        context = canvas.getContext('2d');
+        drwaing();
+        rotation();
+
+    }
+
+    function drwaing() {
+        canvasContext.fillStyle = 'black';
+        canvasContext.fillRect(0 , 0 , canvas.width , canvas.height);
+        canvasContext.fillStyle = 'red';
+        canvasContext.fillRect(canvas.width/2 , canvas.height/2 , canvas.width/3 , canvas.height/3);
+        canvasContext.fillStyle = 'yellow';
+        canvasContext.fillRect(canvas.width/4 , canvas.height/4 , canvas.width/6 , canvas.height/6);
+        canvasContext.fillStyle = 'white';
+        canvasContext.fillRect(canvas.width/8 , canvas.height/8 , canvas.width/9 , canvas.height/9);
+        canvasContext.fillStyle = 'green';
+        canvasContext.fillRect(canvas.width/12 , canvas.height/12 , canvas.width/12 , canvas.height/12);
+        
+    }
+
+    var canvas1;
+    var context;
+         function rotation(){
+            canvasContext.fillStyle = 'black';
+            canvasContext.fillRect(0 , 0 , canvas.width , canvas.height);
+         }
+
+
+</script>
+    
+</html>

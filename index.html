@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+    <head>
+        <style>
+            div{
+                color:yellowgreen;
+                font-size: 40px;
+                font-style: italic;
+            }
+            .utk{
+                color: cornsilk;
+                font-size: 100px;
+                font-style: bold;
+                font-variant: inherit;
+            }
+        </style>
+        <title>
+            google.com
+        </title>
+    </head>
+    <body>
+      <div> <h1> This is default browser </h1> </div>
+      <p class = "utk" id = "lol"></p>
+      <button id = "ent" onclick="myfunction()">Click this</button>
+      <script>
+          function myfunction(){
+          let fname = prompt('Enter First name .......');
+          let lname = prompt('Enter last name........');
+          let age = prompt('Enter age...........');
+          let result = fname + " " +  lname + " is " + age + " years old " ;
+          document.getElementById('lol').innerHTML=result;}
+          //let s = Number(0);
+         // function sum()
+         // {
+           //   for( let i = Number(0) ; i < 10 ; i++)
+            //  {
+                  //s += i ;
+             // }
+             // return s ;
+         // }
+         //let text = "Hello" ;
+         // document.getElementById('lol').innerText = text ;
+      </script>
+    </body>
+</html>

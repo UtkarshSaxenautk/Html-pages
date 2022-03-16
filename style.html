@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title> style page </title>
+    </head>
+    <body>
+        <h1> Checking style by css</h1>
+        <p> Here comes the output </p>
+        <div id = "ani" onclick="doing()">Click here to start animation</div>
+        <script type="text/javascript">
+            var x = document.getElementById('ani');
+            function doing(){
+                //x.style.WebkitAnimation = "mymove 4s , 2";
+                x.style.animation = "mymove 4s , 2";
+            }
+                x.addEventListener("webkitAnimationStart" , startfunction());
+                x.addEventListener("webkitAnimationIteration" , repeatfunction());
+                x.addEventListener("webkitAnimationEnd" , stopfunction());
+                x.addEventListener("animationstart" , startfunction());
+                x.addEventListener("animationiteration" , repeatfunction());
+                x.addEventListener("animationend" , stopfunction());
+
+           function startfunction(){
+            this.innerHTML = "Animation has started : color is red ";
+            this.style.background-color = "red";
+           }
+           function repeatfunction(){
+            this.innerHTML = "Animation is repeated : color is blue";
+            this.style.background-color= "blue";
+           }
+           function stopfunction(){
+            this.innerHTML = "Animation is stopped ";
+            this.style.background-color = "orange";
+           }
+            
+        </script>
+    </body>
+</html>

@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+    <head>
+        <title style = "color: #087979">
+            Input value 
+        </title>
+    </head>
+    <body>
+        <h1>
+            We check input value concept
+        </h1>
+        <p style="color: #044461;">
+             Enter value of x : 
+             <input type="number" id  = "n1" value = 1>
+             <br>
+             Enter value of y : 
+             <input type="number" id="n2" value = 1>
+             <br>
+             x + y = 
+        </p>
+        <p id = "lol" ></p>
+             <script>
+                 function add()
+                 {
+                   let x = document.getElementById('n1').value;
+                   let y = document.getElementById('n2').value ;
+                   let a = parseInt(x);
+                   let b = parseInt(y);
+                   let p = a + b  ;
+                  document.getElementById('lol').innerHTML = p ;
+                 }
+             </script>
+             <button onclick="add()" style="color: chartreuse;" > Click to add </button>
+    </body>
+</html>

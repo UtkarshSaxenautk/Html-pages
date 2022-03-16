@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src = "acedamic.js"></script>
+        <link rel = "stylesheet" href="acedamic.css">
+
+        <title>
+            acedamic.com
+        </title>
+    </head>
+    <body>
+        <h1 style="align-content: center; color: blanchedalmond;">
+            Help for everyone
+        </h1>
+        <p class = "utk" id="utkarsh">
+            Select standard: 
+            <br>
+         <input type="number" id ="cls" value="12">
+            <br>
+           Select board:
+            <br>
+         <select name="boards" id = "boards">
+            <option id= "b1" value = "CBSE">Central Board of Secondary Education</option>
+            <option  id ="b2" value = "upboard">Uttar Pradesh Education Board</option>
+            <option id="b3" value =  "mhboard">Maharashtra Board</option> 
+         </select>
+            <br>
+         <select name = "langauge" id ="lang">
+             <option id = "l1" value = "English">English</option>
+             <option id="l2" value = "Hindi">Hindi</option>
+         </select> 
+            <br>
+          <img src = "data:image/png;base64,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"
+           id = "image" class = "ima"> 
+           <a id = "link" href = ""></a> 
+         <button onclick="myfuc()"> Submit Details</button> 
+      
+        </p>
+    </body>
+</html>

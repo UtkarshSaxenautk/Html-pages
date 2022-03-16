@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            lol
+        </title>
+    </head>
+    <body style="color: #098786;">
+        <p id="utk" style = "color: blue; font-size: medium; font-style: italic;" ></p>
+            <script>
+                
+                let text = "Hello world and earth";
+                let uppercase = text.toUpperCase();
+                let lowercase = text.toLowerCase();
+                let concate = uppercase.concat(lowercase);
+                let search = concate.search("world");
+                let tofind = concate.indexOf("world");
+                let number = "5" ;
+                let pad = number.padEnd( 4 , 9);
+               // document.getElementById('lol').innerHTML = text + "/n" + uppercase + "/n" + lowercase
+               // + "/n" + concate + "/n" + search + "/n" + tofind + "/n" + number + "/n" + pad ;
+                    
+               document.getElementById('utk').innerHTML = text + "\r\n" + uppercase + "\r\n"
+               + lowercase + "\r\n" + concate + "\r\n" + search + "\r\n" + tofind  + "\r\n" + number +
+               "\r\n" + pad ;
+            
+
+            </script>
+        
+    </body>
+</html>

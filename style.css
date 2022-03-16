@@ -1,0 +1,58 @@
+body 
+{
+    background-color:white;
+}
+h1{
+    text-align: center;
+    text-shadow: white;
+    color: yellow;
+}
+h2{
+    text-align: center;
+    text-shadow: whitesmoke;
+    color: violet;
+}
+h3{
+    text-align: center;
+    text-shadow: wheat;
+    color: tomato;
+}
+h4{
+    text-align: center;
+    text-shadow: thistle;
+    color: turquoise;
+
+}
+h5{
+    text-align: center;
+    text-shadow: teal;
+    color: yellowgreen;
+}
+h6{
+    text-align: center;
+    text-shadow: unset;
+    color:black;
+}
+p
+{
+    color:brown;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#div{
+    margin: 25px;
+    width: 300px;
+    height: 250px;
+    font-size: 20px;
+    background-color: skyblue;
+    font-style: italic;
+    position: relative;
+}
+
+@-webkit-keyframes mymove {
+    from{top: 0px;}
+    to{top: 200px;}
+}
+@keyframes mymove{
+    from { top: 0px; }
+    to{ top : 200px; }
+}

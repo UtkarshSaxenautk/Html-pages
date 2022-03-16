@@ -1,0 +1,31 @@
+.image{
+    height: 50%;
+    width:100%
+    
+}
+
+
+
+
+.logo{
+    display: flex;
+    justify-content: center;
+    height: 100px;
+}
+
+table{
+     display: flex;
+     flex: content;
+     justify-content: center;
+     padding: 4px;
+     border-radius: 30px;
+     border-style:dotted;
+     border-color: red;
+}
+td{
+    padding: 8px;
+}
+
+h1{
+    text-align: center;
+}
